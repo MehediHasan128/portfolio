@@ -47,7 +47,7 @@ const HeroSection = () => {
         </AnimatedContent>
 
         <div className="absolute 2xl:right-0 h-full w-[30%] text-white flex justify-center items-center">
-          <h1>Hello</h1>
+          
         </div>
       </div>
     </div>
