@@ -1,7 +1,7 @@
 import Orb from "../../components/Orb";
 import mehedi from "../../assets/images/mehedi.png";
-import TextType from "../../components/TextType";
 import AnimatedContent from "../../components/AnimatedContent";
+import ShinyText from "../../components/ShinyText";
 
 const HeroSection = () => {
   return (
@@ -13,22 +13,58 @@ const HeroSection = () => {
 
       {/* content */}
       <div>
-        <div className="absolute 2xl:left-0 h-full w-[30%] text-white flex justify-center items-center px-10">
-          <TextType
-            text={[
-              "Hi, I'm Mehedi Hasan",
-              "A MERN Stack Developer",
-              "Welcome to my Portfolio!",
-            ]}
-            typingSpeed={85}
-            pauseDuration={2000}
-            showCursor
-            cursorCharacter="_"
-            deletingSpeed={50}
-            cursorBlinkDuration={0.5}
-            className="text-6xl leading-20 h-42.5"
-          />
-        </div>
+        <AnimatedContent
+          distance={100}
+          direction="horizontal"
+          reverse={true}
+          duration={2.5}
+          ease="power3.out"
+          initialOpacity={0}
+          animateOpacity
+          scale={1}
+          threshold={0.1}
+          delay={0.5}
+          className="absolute 2xl:left-0 h-full w-[35%] text-white flex justify-center items-center px-16 pointer-events-none"
+        >
+          <div className="space-y-10">
+            <div>
+              <h1 className="text-5xl font-bold leading-20">
+                Hello, I'm{" "}
+                <span className="cursor-target pointer-events-auto">
+                  <ShinyText
+                    text="Mehedi Hasan"
+                    speed={2}
+                    delay={0}
+                    color="#9277ff"
+                    shineColor="#dad1ff"
+                    spread={120}
+                    direction="left"
+                    yoyo={false}
+                    pauseOnHover={false}
+                    disabled={false}
+                    className="text-7xl"
+                  />
+                </span>
+              </h1>
+              <h2 className="text-3xl">A MERN-Stack Web Developer</h2>
+            </div>
+
+            <p className="text-justify">
+              I build scalable, high-performance web applications with modern
+              technologies like MERN stack, focusing on clean UI and seamless
+              user experience.
+            </p>
+
+            <div className="space-x-5 pointer-events-auto">
+              <button className="border-2 border-[#5227ff] px-5 py-2.5 rounded-md bg-[#5227ff] cursor-target active:scale-95 duration-200">
+                Download Resume
+              </button>
+              <button className="border-2 border-[#5227ff] px-5 py-2.5 rounded-md text-white cursor-target active:scale-95 duration-200">
+                Hire Me
+              </button>
+            </div>
+          </div>
+        </AnimatedContent>
 
         <AnimatedContent
           distance={100}
@@ -46,7 +82,7 @@ const HeroSection = () => {
           <img className="absolute bottom-0" src={mehedi} alt="Mehedi" />
         </AnimatedContent>
 
-        <div className="absolute 2xl:right-0 h-full w-[30%] text-white flex justify-center items-center">
+        <div className="absolute 2xl:right-0 h-full w-[35%] text-white flex justify-center items-center pointer-events-none">
           
         </div>
       </div>

@@ -1,6 +1,6 @@
 import GlassSurface from "../../components/GlassSurface";
 import GooeyNav from "../../components/GooeyNav";
-import StarBorder from "../../components/StarBorder";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const items = [
   { label: "Home", href: "#home" },
@@ -38,14 +38,14 @@ const Navbar = () => {
           />
         </nav>
         {/* Contact button */}
-        <StarBorder
-          as="button"
-          className="custom-class cursor-target bg-transparent border"
-          color="rgb(82, 38, 255)"
-          speed="5s"
-        >
-          Content
-        </StarBorder>
+        <div>
+          <button className="border-2 bg-white font-medium text-black rounded-full flex items-center gap-2 p-0.5 cursor-target active:scale-95 duration-200">
+            <span className="px-2.5">Get in touch</span>
+            <span className="bg-[#5227ff] rounded-full text-white p-2.5">
+              <MdOutlineArrowOutward />
+            </span>
+          </button>
+        </div>
       </div>
     </GlassSurface>
   );
