@@ -63,10 +63,10 @@ const HeroSection = () => {
             </p>
 
             <div className="space-x-5 pointer-events-auto">
-              <button className="border-2 border-[#5227ff] px-5 py-2.5 rounded-md bg-[#5227ff] cursor-target active:scale-95 duration-200 cursor-pointer">
+              <button className="border-2 border-primary px-5 py-2.5 rounded-md bg-primary cursor-target active:scale-95 duration-200 cursor-pointer">
                 Download Resume
               </button>
-              <button className="border-2 border-[#5227ff] px-5 py-2.5 rounded-md text-white cursor-target active:scale-95 duration-200 cursor-pointer">
+              <button className="border-2 border-primary px-5 py-2.5 rounded-md text-white cursor-target active:scale-95 duration-200 cursor-pointer">
                 Hire Me
               </button>
             </div>
@@ -103,13 +103,13 @@ const HeroSection = () => {
           className="absolute 2xl:right-0 h-full w-[35%] text-white flex justify-center items-center pointer-events-none"
         >
           <div className="space-y-20 pointer-events-auto">
-            <div className="text-3xl border-2 border-[#5227ff] p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
+            <div className="text-3xl border-2 border-primary p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
               <FaGithub />
             </div>
-            <div className="text-3xl border-2 border-[#5227ff] p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
+            <div className="text-3xl border-2 border-primary p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
               <FaLinkedinIn />
             </div>
-            <div className="text-3xl border-2 border-[#5227ff] p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
+            <div className="text-3xl border-2 border-primary p-3 rounded-full cursor-target hover:scale-125 duration-500 hover:shadow-lg hover:shadow-[#5227ff]/50">
               <FaXTwitter />
             </div>
           </div>

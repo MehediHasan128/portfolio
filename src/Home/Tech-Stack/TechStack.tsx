@@ -40,21 +40,24 @@ const techStacks = [
 
 const TechStack = () => {
   return (
-    <div className="relative bg-white py-5">
-      <div className="absolute top-0 left-0 w-24 h-full bg-linear-to-r from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
+    <div className="relative mb-20">
+      <div className="bg-primary absolute top-0 h-full w-full z-0 -skew-2" />
+      <div className="relative bg-white z-10 skew-2 py-5">
+        <div className="absolute top-0 left-0 w-24 h-full bg-linear-to-r from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
 
-      <div className="flex gap-20 overflow-hidden">
-        {techStacks.map((tech, i) => (
-          <div key={i} className="flex items-center gap-10">
-            <div className="w-16">
-              <img src={tech.image} alt={tech.text} />
+        <div className="flex gap-20 overflow-hidden">
+          {techStacks.map((tech, i) => (
+            <div key={i} className="flex items-center gap-10">
+              <div className="w-16">
+                <img src={tech.image} alt={tech.text} />
+              </div>
+              <h1 className="text-4xl font-medium">{tech.text}</h1>
             </div>
-            <h1 className="text-4xl font-medium">{tech.text}</h1>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
 
-      <div className="absolute top-0 right-0 w-24 h-full bg-linear-to-l from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
+        <div className="absolute top-0 right-0 w-24 h-full bg-linear-to-l from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
+      </div>
     </div>
   );
 };
