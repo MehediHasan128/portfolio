@@ -7,7 +7,7 @@ import GradualBlurMemo from './components/GradualBlur.tsx';
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="overflow-x-hidden relative bg-[#060010]">
+    <div className="overflow-hidden relative bg-[#060010]">
       <TargetCursor
         spinDuration={2}
         hideDefaultCursor

@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
-    <div className="h-screen relative overflow-hidden">
+    <section className="h-screen relative overflow-hidden">
       {/* background orb */}
       <div className="absolute inset-0 pointer-events-auto">
         <Orb hoverIntensity={2} rotateOnHover hue={0} forceHoverState={false} />
@@ -25,12 +25,12 @@ const HeroSection = () => {
           scale={1}
           threshold={0.1}
           delay={0.5}
-          className="absolute 2xl:left-0 h-full w-[35%] text-white flex justify-center items-center px-16 pointer-events-none"
+          className="absolute 2xl:left-0 h-full max-w-[35%] text-white flex justify-center items-center px-16 pointer-events-none"
         >
-          <div className="space-y-10">
+          <div className="space-y-10 w-full">
             <div>
               <h1 className="text-5xl font-bold leading-20">
-                Hello, I'm{" "}
+                Hello, I'm <br />
                 <span className="cursor-target pointer-events-auto">
                   <a
                     href="https://www.facebook.com/mehedi.hasan.376594"
@@ -84,9 +84,9 @@ const HeroSection = () => {
           scale={1}
           threshold={0.1}
           delay={0.5}
-          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pointer-events-none h-full w-[90%] md:w-[50%] lg:w-[40%] xl:w-[30%] 2xl:w-[25%]"
+          className="absolute bottom-0 left-1/2 transform -translate-x-1/2 pointer-events-none h-full w-[90%] md:w-[50%] lg:w-[40%] xl:w-[30%] 2xl:max-w-[25%]"
         >
-          <img className="absolute bottom-0" src={mehedi} alt="Mehedi" />
+          <img className="absolute bottom-0 w-full" src={mehedi} alt="Mehedi" />
         </AnimatedContent>
 
         <AnimatedContent
@@ -115,7 +115,7 @@ const HeroSection = () => {
           </div>
         </AnimatedContent>
       </div>
-    </div>
+    </section>
   );
 };
 

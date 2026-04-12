@@ -40,7 +40,7 @@ const techStacks = [
 
 const TechStack = () => {
   return (
-    <div className="relative mb-20">
+    <section className="relative">
       <div className="bg-primary absolute top-0 h-full w-full z-0 -skew-2" />
       <div className="relative bg-white z-10 skew-2 py-5">
         <div className="absolute top-0 left-0 w-24 h-full bg-linear-to-r from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
@@ -58,7 +58,7 @@ const TechStack = () => {
 
         <div className="absolute top-0 right-0 w-24 h-full bg-linear-to-l from-[#2c2c2c] via-[#9a9a9ac4] to-[#ffffff53]" />
       </div>
-    </div>
+    </section>
   );
 };
 
