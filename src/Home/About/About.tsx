@@ -24,9 +24,12 @@ const roles = [
 
 const About = () => {
   return (
-    <section className="bg-radial-[at_25%_75%] from-[#130032] to-[#060010] to-95%">
-      <Container>
-        <div className="text-white 2xl:w-[90%] mx-auto py-42">
+    <section
+      id="about"
+      className="bg-radial-[at_25%_75%] from-[#130032] to-[#060010] to-75%"
+    >
+      <Container className="py-42">
+        <div className="text-white 2xl:w-[90%] mx-auto">
           <div className="flex justify-center">
             <div className="text-start w-full">
               <div className="h-1 w-[160%] bg-primary my-8 rounded-full" />

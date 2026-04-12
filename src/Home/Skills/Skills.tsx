@@ -12,16 +12,17 @@ import node from "../../assets/icons/node.png";
 import mongo from "../../assets/icons/mongo.png";
 import mongoose from "../../assets/icons/mongoose.png";
 import typescript from "../../assets/icons/ts.png";
+import jwt from "../../assets/icons/jwt.png";
 import OrbitImages from "../../components/OrbitImages";
 
 const frontend = [html5, css3, java, redux, tailwind, next, figma];
-const backend = [express, node, mongo, mongoose, typescript];
+const backend = [express, node, mongo, mongoose, typescript, jwt];
 
 const Skills = () => {
   return (
-    <section className="mb-96">
-      <Container className="py-20 text-white">
-        <div>
+    <section id="skills">
+      <Container>
+        <>
           <div className="flex justify-between items-end">
             <div className="w-[60%]">
               <h1 className="text-5xl leading-16">
@@ -41,11 +42,11 @@ const Skills = () => {
               </p>
             </div>
           </div>
-          <div className="relative mt-96">
+          <div className="relative my-96">
             <div className="w-[12%] mx-auto">
               <img src={brain} alt="" />
             </div>
-            <div className="text-white absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[30%]">
+            <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[30%]">
               <OrbitImages
                 images={frontend}
                 shape="circle"
@@ -84,7 +85,7 @@ const Skills = () => {
               />
             </div>
           </div>
-        </div>
+        </>
       </Container>
     </section>
   );

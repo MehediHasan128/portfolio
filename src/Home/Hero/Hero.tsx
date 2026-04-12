@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
-    <section className="h-screen relative overflow-hidden">
+    <section id="home" className="h-screen relative overflow-hidden">
       {/* background orb */}
       <div className="absolute inset-0 pointer-events-auto">
         <Orb hoverIntensity={2} rotateOnHover hue={0} forceHoverState={false} />

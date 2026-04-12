@@ -4,6 +4,9 @@
 @import "@fontsource-variable/geist";
 @import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
 
+html{
+  scroll-behavior: smooth;
+}
 
 @custom-variant dark (&:is(.dark *));
 

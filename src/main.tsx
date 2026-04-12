@@ -1,20 +1,22 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import TargetCursor from './components/TargetCursor.tsx';
-import GradualBlurMemo from './components/GradualBlur.tsx';
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+import TargetCursor from "./components/TargetCursor.tsx";
+import GradualBlurMemo from "./components/GradualBlur.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <div className="overflow-hidden relative bg-[#060010]">
+    <div className="overflow-hidden bg-[#060010]">
       <TargetCursor
         spinDuration={2}
         hideDefaultCursor
         parallaxOn
         hoverDuration={0.2}
       />
-      <App />
+      <div className="text-white">
+        <App />
+      </div>
       <GradualBlurMemo
         target="page"
         position="bottom"
