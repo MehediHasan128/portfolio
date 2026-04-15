@@ -1,5 +1,5 @@
 import mongodb from "../../assets/icons/mongo.png";
-import express from "../../assets/icons/express.png";
+import express from "../../assets/icons/express-black.png";
 import react from "../../assets/icons/react.png";
 import node from "../../assets/icons/node.png";
 

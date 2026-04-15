@@ -4,7 +4,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="h-screen bg-radial-[at_25%_75%] from-[#130032] to-[#060010] to-75%"
+      className="h-screen bg-radial-[at_75%_75%] from-[#130032] to-[#060010] to-75%"
     >
       <Container>
         <div>
@@ -18,6 +18,7 @@ const Projects = () => {
               <span className="text-5xl font-bold">Featured Project</span>
             </h1>
           </div>
+          
         </div>
       </Container>
     </section>

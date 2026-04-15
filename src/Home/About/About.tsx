@@ -2,7 +2,6 @@ import Container from "../../components/Container";
 import ProfileCard from "../../components/ProfileCard";
 import myAvatar from "../../assets/images/mehedi2.png";
 import code from "../../assets/icons/code-02-01.png";
-// import { FaGithub, FaLinkedinIn, FaXTwitter } from "react-icons/fa6";
 
 const roles = [
   {
@@ -26,7 +25,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-radial-[at_25%_75%] from-[#130032] to-[#060010] to-75%"
+      className="bg-radial-[at_25%_25%] from-[#130032] to-[#060010] to-75% h-screen"
     >
       <Container className="py-42">
         <div className="text-white 2xl:w-[90%] mx-auto">
