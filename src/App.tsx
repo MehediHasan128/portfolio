@@ -1,5 +1,6 @@
 import AnimatedContent from "./components/AnimatedContent";
 import HomePage from "./Home/Home/Home";
+import Footer from "./Shared/Footer/Footer";
 import Navbar from "./Shared/Navbar/Navbar";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Navbar />
       </AnimatedContent>
       <HomePage />
+      <Footer />
     </>
   );
 }
