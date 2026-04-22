@@ -78,9 +78,14 @@ const Footer = () => {
           </div>
           <div className="text-center pb-10 leading-16">
             <h1 className="text-5xl font-medium">Thank You</h1>
-            <p className="text-gray-400">
-              for visiting my portfolio. Your time and attention mean a lot!
-            </p>
+
+            <div className="flex items-center">
+              <div className="h-px bg-linear-to-r from-[#ffffff00] to-[#ffffff] w-full" />
+              <p className="text-gray-400 w-full">
+                for visiting my portfolio. Your time and attention mean a lot!
+              </p>
+              <div className="h-px bg-linear-to-l from-[#ffffff00] to-[#ffffff] w-full" />
+            </div>
           </div>
         </div>
       </Container>
