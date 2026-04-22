@@ -1,6 +1,7 @@
 import GlassSurface from "../../components/GlassSurface";
 import GooeyNav from "../../components/GooeyNav";
 import { MdOutlineArrowOutward } from "react-icons/md";
+import logo from '../../assets/logo/logo.png';
 
 const items = [
   { label: "Home", href: "#home" },
@@ -22,7 +23,7 @@ const Navbar = () => {
       <div className="text-white w-full flex justify-between items-center">
         {/* logo */}
         <div className="cursor-target p-2">
-          <h1>MehediScript</h1>
+          <img src={logo} alt="Logo" className="w-32" />
         </div>
         {/* navigation links */}
         <nav>
@@ -39,12 +40,15 @@ const Navbar = () => {
         </nav>
         {/* Contact button */}
         <div>
-          <button className="border-2 bg-white font-medium text-black rounded-full flex items-center gap-2 p-0.5 cursor-target active:scale-95 duration-200">
+          <a
+            href="#contact"
+            className="border-2 bg-white font-medium text-black rounded-full flex items-center gap-2 p-0.5 cursor-target active:scale-95 duration-200"
+          >
             <span className="px-2.5">Get in touch</span>
             <span className="bg-[#5227ff] rounded-full text-white p-2.5">
               <MdOutlineArrowOutward />
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </GlassSurface>

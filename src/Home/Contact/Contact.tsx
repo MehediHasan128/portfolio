@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="bg-radial-[at_75%_75%] from-[#130032] to-[#060010] to-75%">
+    <section id="contact" className="bg-radial-[at_75%_75%] from-[#130032] to-[#060010] to-75%">
       <Container>
         <div className="flex">
           <div className="w-[50%]">

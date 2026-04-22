@@ -86,14 +86,29 @@ const Projects = () => {
                 </div>
               </div>
               <div className="mt-5 space-x-2.5">
-                <a href="" target="_blank" rel="noopener noreferrer" className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target">
+                <a
+                  href="https://github.com/MehediHasan128/laivaly-client"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                >
                   Client Repository
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target">
-                  Client Repository
+                <a
+                  href="https://github.com/MehediHasan128/laivaly-server"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                >
+                  Server Repository
                 </a>
-                <a href="" target="_blank" rel="noopener noreferrer" className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target">
-                  Client Repository
+                <a
+                  href="https://client.laivaly.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                >
+                  Live Demo
                 </a>
               </div>
             </div>
