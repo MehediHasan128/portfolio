@@ -27,8 +27,8 @@ const About = () => {
       id="about"
       className="bg-radial-[at_25%_25%] from-[#130032] to-[#060010] to-75%"
     >
-      <Container className="lg:py-42">
-        <div className="text-white w-[90%] mx-auto">
+      <Container>
+        <div className="text-white   mx-auto">
           <div className="flex flex-col-reverse lg:flex-row justify-center">
             <div className="text-start w-full">
               <div className="h-1 w-[160%] bg-primary my-8 rounded-full" />

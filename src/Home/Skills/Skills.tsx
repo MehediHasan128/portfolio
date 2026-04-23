@@ -23,10 +23,12 @@ const Skills = () => {
     <section id="skills">
       <Container>
         <>
-          <div className="flex justify-between items-end">
-            <div className="w-[60%]">
-              <h1 className="text-5xl leading-16">
-                <span className="font-headingStyle">My Professional</span>{" "}
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-5 md:gap-0">
+            <div className="md:w-[60%]">
+              <h1 className="text-3xl lg:text-5xl lg:leading-16">
+                <span className="text-lg lg:text-base font-headingStyle">
+                  My Professional
+                </span>{" "}
                 <br />
                 <span className="font-bold">
                   Background Skills and <br />
@@ -34,19 +36,19 @@ const Skills = () => {
                 </span>
               </h1>
             </div>
-            <div className="w-[40%] text-end">
-              <p className="text-lg">
+            <div className="md:w-[40%] md:text-end">
+              <p className="md:text-sm lg:text-lg">
                 I'm skilled in HTML, CSS, JavaScript and frameworks like React
                 and Node.js. Ialso have experience with database management
                 using MongoDB.
               </p>
             </div>
           </div>
-          <div className="relative my-96">
-            <div className="w-[12%] mx-auto">
+          <div className="relative my-56 md:my-80">
+            <div className="w-[30%] lg:w-[20%] xl:w-[15%] 2xl:w-[12%] mx-auto">
               <img src={brain} alt="" />
             </div>
-            <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[30%]">
+            <div className="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[70%] lg:w-[50%] xl:w-[40%] 2xl:w-[30%]">
               <OrbitImages
                 images={frontend}
                 shape="circle"
@@ -65,7 +67,7 @@ const Skills = () => {
                 paused={false}
               />
             </div>
-            <div className="text-white absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-[50%]">
+            <div className="text-white absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 w-full lg:w-[75%] xl:w-[60%] 2xl:w-[45%]">
               <OrbitImages
                 images={backend}
                 shape="circle"
