@@ -25,26 +25,31 @@ const About = () => {
   return (
     <section
       id="about"
-      className="bg-radial-[at_25%_25%] from-[#130032] to-[#060010] to-75% h-screen"
+      className="bg-radial-[at_25%_25%] from-[#130032] to-[#060010] to-75%"
     >
-      <Container className="py-42">
-        <div className="text-white 2xl:w-[90%] mx-auto">
-          <div className="flex justify-center">
+      <Container className="lg:py-42">
+        <div className="text-white w-[90%] mx-auto">
+          <div className="flex flex-col-reverse lg:flex-row justify-center">
             <div className="text-start w-full">
               <div className="h-1 w-[160%] bg-primary my-8 rounded-full" />
-              <h1 className="text-7xl font-extrabold uppercase">about.</h1>
-              <p className="py-8 text-justify">
+              <h1 className="text-4xl md:text-7xl lg:text-6xl font-extrabold uppercase">
+                about.
+              </h1>
+              <p className="text-sm md:text-base py-5 md:py-8 text-justify">
                 Hi there! I'm Mehedi Hasan, a Junior Full-Stack Web Developer
                 specializing in the MERN Stack. I am passionate about creating
                 efficient, user-friendly, and modern web applications from the
                 ground up.
               </p>
-              <p className="text-lg font-medium">
+              <p className="text-base md:text-lg font-medium">
                 Here is what I bring to the table
               </p>
-              <ul className="p-5 list-inside list-disc space-y-2">
+              <ul className="p-3 md:p-5 list-inside list-disc space-y-2">
                 {roles.map((role, i) => (
-                  <li key={i} className="text-gray-400 text-justify">
+                  <li
+                    key={i}
+                    className="text-sm md:text-base lg:text-sm xl:text-base text-gray-400 text-justify"
+                  >
                     <span className="font-semibold text-white">
                       {role.label}:{" "}
                     </span>
