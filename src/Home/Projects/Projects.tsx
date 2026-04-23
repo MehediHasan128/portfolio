@@ -11,29 +11,40 @@ const Projects = () => {
     >
       <Container>
         <div>
-          <div className="flex justify-between items-end">
-            <p>
-              An example of my work focusing on performance, scalability, and
-              user experience.
-            </p>
-            <h1 className="text-3xl leading-16 text-end">
-              My Latest Work <br />
-              <span className="text-5xl font-bold">Featured Project</span>
-            </h1>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-5 md:gap-0">
+            <div className="md:w-[60%]">
+              <h1 className="text-3xl lg:text-5xl lg:leading-16">
+                <span className="text-lg lg:text-base font-headingStyle">
+                  My Professional
+                </span>{" "}
+                <br />
+                <span className="font-bold">
+                  Background Skills and <br />
+                  Accomplishments
+                </span>
+              </h1>
+            </div>
+            <div className="md:w-[40%] md:text-end">
+              <p className="md:text-sm lg:text-lg">
+                I'm skilled in HTML, CSS, JavaScript and frameworks like React
+                and Node.js. Ialso have experience with database management
+                using MongoDB.
+              </p>
+            </div>
           </div>
 
-          <div className="my-32 flex">
-            <div className="w-[50%]">
+          <div className="py-20 lg:py-42 flex flex-col-reverse xl:flex-row gap-10 lg:gap-16 xl:gap-0">
+            <div className="xl:w-[50%]">
               <div className="flex items-end">
-                <h1 className="text-9xl font-extrabold">01</h1>
+                <h1 className="text-8xl md:text-9xl font-extrabold">01</h1>
                 <span className="py-3">
-                  <h1 className="text-3xl font-bold">Laivaly</h1>
-                  <p className="text-gray-400">
+                  <h1 className="text-xl md:text-3xl font-bold">Laivaly</h1>
+                  <p className="text-sm md:text-base text-gray-400">
                     A modern full-stack clothing e-commerce platform
                   </p>
                 </span>
               </div>
-              <div className="text-justify mr-10 my-5 text-sm text-gray-300">
+              <div className="text-justify md:mr-10 my-5 text-xs md:text-sm text-gray-300">
                 <p>
                   Laivaly is a full-stack clothing e-commerce web application
                   built using the MERN stack. It allows users to browse
@@ -43,10 +54,10 @@ const Projects = () => {
                   payments.
                 </p>
               </div>
-              <div className="flex gap-5">
-                <div className="w-[50%]">
+              <div className="flex flex-col md:flex-row md:gap-5">
+                <div className="md:w-[50%]">
                   <h1 className="font-medium">Key Features</h1>
-                  <ul className="my-5 text-sm text-gray-400 list-disc list-inside space-y-2">
+                  <ul className="my-5 text-xs md:text-sm text-gray-400 list-disc list-inside space-y-2">
                     <li>User authentication with JWT & protected routes</li>
                     <li>Add to cart & wishlist functionality</li>
                     <li>Secure checkout with Stripe, PayPal & COD</li>
@@ -55,9 +66,9 @@ const Projects = () => {
                     <li>Responsive and modern UI</li>
                   </ul>
                 </div>
-                <div className="w-[50%]">
+                <div className="md:w-[50%]">
                   <h1 className="font-medium">Tech Stack</h1>
-                  <ul className="my-5 text-sm text-gray-400 list-disc list-inside space-y-2">
+                  <ul className="my-5 text-xs md:text-sm text-gray-400 list-disc list-inside space-y-2">
                     <li>
                       <span className="font-semibold text-gray-200">
                         Frontend:
@@ -90,7 +101,7 @@ const Projects = () => {
                   href="https://github.com/MehediHasan128/laivaly-client"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                  className="border text-xs md:text-base px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
                 >
                   Client Repository
                 </a>
@@ -98,7 +109,7 @@ const Projects = () => {
                   href="https://github.com/MehediHasan128/laivaly-server"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                  className="border text-xs md:text-base px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
                 >
                   Server Repository
                 </a>
@@ -106,13 +117,13 @@ const Projects = () => {
                   href="https://client.laivaly.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="border px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
+                  className="border text-xs md:text-base px-5 py-2 rounded-md hover:shadow-2xl hover:shadow-primary/50 transition-shadow duration-300 cursor-target"
                 >
                   Live Demo
                 </a>
               </div>
             </div>
-            <div className="w-[50%] rounded-2xl relative h-[550px]">
+            <div className="xl:w-[50%] rounded-2xl relative h-96 md:h-[550px]">
               <TiltedCard
                 imageSrc={laivaly}
                 altText="Laivaly Project"
