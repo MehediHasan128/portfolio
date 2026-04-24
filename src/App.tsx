@@ -17,7 +17,7 @@ function App() {
         scale={1}
         threshold={0.1}
         delay={0.5}
-        className="hidden md:fixed top-10 left-1/2 transform -translate-x-1/2 right-0 z-50 w-[80%]"
+        className="fixed top-3 xl:top-10 left-1/2 transform -translate-x-1/2 right-0 z-50 w-[95%] md:w-[80%]"
       >
         <Navbar />
       </AnimatedContent>

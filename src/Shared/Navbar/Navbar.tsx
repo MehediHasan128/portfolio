@@ -18,15 +18,15 @@ const Navbar = () => {
       borderRadius={50}
       brightness={50}
       backgroundOpacity={0.5}
-      className="my-custom-class px-12 py-3"
+      className="my-custom-class px-5 xl:px-12 py-1 xl:py-3"
     >
-      <div className="text-white w-full flex justify-between items-center">
+      <div className="text-white w-full flex justify-center xl:justify-between items-center">
         {/* logo */}
-        <div className="cursor-target p-2">
-          <img src={logo} alt="Logo" className="w-32" />
+        <div className="cursor-target">
+          <img src={logo} alt="Logo" className="w-20 xl:w-32" />
         </div>
         {/* navigation links */}
-        <nav>
+        <nav className="hidden xl:block">
           <GooeyNav
             items={items}
             particleCount={15}
@@ -39,7 +39,7 @@ const Navbar = () => {
           />
         </nav>
         {/* Contact button */}
-        <div>
+        <div className="hidden xl:block">
           <a
             href="#contact"
             className="border-2 bg-white font-medium text-black rounded-full flex items-center gap-2 p-0.5 cursor-target active:scale-95 duration-200"

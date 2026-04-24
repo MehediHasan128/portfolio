@@ -65,7 +65,7 @@ const Qualifications = () => {
             </div>
           </div>
 
-          <div className="flex flex-col lg:flex-row mt-32 gap-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 my-20">
             {educationalQualifications.map((item, i) => (
               <AnimatedContent
                 distance={100}
@@ -84,22 +84,22 @@ const Qualifications = () => {
                   className="custom-spotlight-card w-full h-full hover:-translate-y-2.5 duration-500"
                   spotlightColor="#b8a9f5"
                 >
-                  <div className="text-black space-y-5">
-                    <div className="flex lg:flex-col xl:flex-row gap-10">
-                      <div className="w-[20%] lg:w-[50%] lg:mx-auto xl:mx-0 xl:w-[20%] h-full lg:h-36 xl:h-full flex items-center">
+                  <div className="text-black space-y-3 md:space-y-5">
+                    <div className="flex flex-col md:flex-row gap-10">
+                      <div className="w-[30%] mx-auto md:w-[20%] md:mx-0 h-full lg:h-36 xl:h-full flex items-center">
                         <img src={item.logo} alt={item.institution} />
                       </div>
-                      <div className="w-[80%] lg:w-full xl:w-[80%]">
-                        <h1 className="text-lg lg:text-base xl:text-lg font-bold">{item.degree}</h1>
-                        <p className="font-medium text-gray-600">
+                      <div className="w-full xl:w-[80%]">
+                        <h1 className="md:text-lg font-bold">{item.degree}</h1>
+                        <p className="font-medium text-gray-600 text-sm md:text-base">
                           {item.institution}
                         </p>
-                        <p className="font-semibold text-primary">
+                        <p className="font-semibold text-primary text-sm md:text-base">
                           {item.passingYear}
                         </p>
                       </div>
                     </div>
-                    <div className="text-justify font-medium text-gray-700 text-sm">
+                    <div className="text-justify font-medium text-gray-700 text-sm md:text-base">
                       <p>{item.description}</p>
                     </div>
                   </div>

@@ -104,7 +104,7 @@ const Contact = () => {
                     <input
                       type="submit"
                       value="Send Message"
-                      className="rounded-md bg-primary px-10 py-3"
+                      className="rounded-md bg-primary px-10 py-3 cursor-target cursor-pointer"
                     />
                   </div>
                 </MForm>
