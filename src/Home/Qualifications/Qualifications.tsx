@@ -40,20 +40,32 @@ const educationalQualifications = [
 
 const Qualifications = () => {
   return (
-    <section id="qualifications" className="py-32">
+    <section id="qualifications">
       <Container>
         <div>
-          <div className="flex justify-between items-end">
-            <h1 className="text-3xl leading-16">
-              My <br />
-              <span className="text-5xl font-bold">Academic Journey</span>
-            </h1>
-            <p>
-              A brief overview of my educational background and learning path.
-            </p>
+          <div className="flex flex-col md:flex-row md:justify-between md:items-end gap-5 md:gap-0">
+            <div className="md:w-[60%]">
+              <h1 className="text-3xl lg:text-5xl lg:leading-16">
+                <span className="text-lg lg:text-base font-headingStyle">
+                  My Professional
+                </span>{" "}
+                <br />
+                <span className="font-bold">
+                  Background Skills and <br />
+                  Accomplishments
+                </span>
+              </h1>
+            </div>
+            <div className="md:w-[40%] md:text-end">
+              <p className="md:text-sm lg:text-lg">
+                I'm skilled in HTML, CSS, JavaScript and frameworks like React
+                and Node.js. Ialso have experience with database management
+                using MongoDB.
+              </p>
+            </div>
           </div>
 
-          <div className="flex mt-32 gap-5">
+          <div className="flex flex-col lg:flex-row mt-32 gap-5">
             {educationalQualifications.map((item, i) => (
               <AnimatedContent
                 distance={100}
@@ -68,30 +80,30 @@ const Qualifications = () => {
                 delay={item.delay}
                 key={i}
               >
-                  <SpotlightCard
-                    className="custom-spotlight-card w-full h-full hover:-translate-y-2.5 duration-500"
-                    spotlightColor="#b8a9f5"
-                  >
-                    <div className="text-black space-y-5">
-                      <div className="flex gap-10">
-                        <div className="w-[20%]">
-                          <img src={item.logo} alt={item.institution} />
-                        </div>
-                        <div className="w-[80%]">
-                          <h1 className="text-lg font-bold">{item.degree}</h1>
-                          <p className="font-medium text-gray-600">
-                            {item.institution}
-                          </p>
-                          <p className="font-semibold text-primary">
-                            {item.passingYear}
-                          </p>
-                        </div>
+                <SpotlightCard
+                  className="custom-spotlight-card w-full h-full hover:-translate-y-2.5 duration-500"
+                  spotlightColor="#b8a9f5"
+                >
+                  <div className="text-black space-y-5">
+                    <div className="flex lg:flex-col xl:flex-row gap-10">
+                      <div className="w-[20%] lg:w-[50%] lg:mx-auto xl:mx-0 xl:w-[20%] h-full lg:h-36 xl:h-full flex items-center">
+                        <img src={item.logo} alt={item.institution} />
                       </div>
-                      <div className="text-justify font-medium text-gray-700 text-sm">
-                        <p>{item.description}</p>
+                      <div className="w-[80%] lg:w-full xl:w-[80%]">
+                        <h1 className="text-lg lg:text-base xl:text-lg font-bold">{item.degree}</h1>
+                        <p className="font-medium text-gray-600">
+                          {item.institution}
+                        </p>
+                        <p className="font-semibold text-primary">
+                          {item.passingYear}
+                        </p>
                       </div>
                     </div>
-                  </SpotlightCard>
+                    <div className="text-justify font-medium text-gray-700 text-sm">
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
+                </SpotlightCard>
               </AnimatedContent>
             ))}
           </div>

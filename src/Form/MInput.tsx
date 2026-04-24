@@ -21,7 +21,7 @@ const MInput = ({ type, name, placeholder, className, label }: TMInputProps) => 
             type={type}
             placeholder={placeholder}
             className={cn(
-              "border rounded-md bg-[#060010b0] px-5 py-3 focus:outline-none cursor-target hover:shadow-2xl transition-shadow duration-300 hover:shadow-primary/50 focus:shadow-2xl focus:shadow-primary/50",
+              "border rounded-md w-full bg-[#060010b0] px-5 py-3 focus:outline-none cursor-target hover:shadow-2xl transition-shadow duration-300 hover:shadow-primary/50 focus:shadow-2xl focus:shadow-primary/50",
               className,
             )}
           />

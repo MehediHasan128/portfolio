@@ -47,7 +47,10 @@ const TechStack = () => {
 
         <div className="flex gap-3 md:gap-5 lg:gap-10 2xl:gap-20 overflow-hidden">
           {techStacks.map((tech, i) => (
-            <div key={i} className="flex items-center gap-3 md:gap-5 2xl:gap-10">
+            <div
+              key={i}
+              className="flex items-center gap-3 md:gap-5 2xl:gap-10"
+            >
               <div className="w-5 md:w-10 xl:w-12 2xl:w-16 -skew-2">
                 <img src={tech.image} alt={tech.text} />
               </div>

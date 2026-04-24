@@ -18,13 +18,16 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="bg-radial-[at_75%_75%] from-[#130032] to-[#060010] to-75%">
+    <section
+      id="contact"
+      className="bg-radial-[at_75%_75%] from-[#130032] to-[#060010] to-75%"
+    >
       <Container>
-        <div className="flex">
-          <div className="w-[50%]">
-            <GlassIcons items={items} className="custom-class" />
-            <h1 className="text-6xl font-extrabold">Contact Us</h1>
-            <p className="my-10 pr-36 text-justify text-gray-400">
+        <div className="flex flex-col xl:flex-row gap-10 xl:gap-0">
+          <div className="xl:w-[50%]">
+            <GlassIcons items={items} className="custom-class py-10" />
+            <h1 className="text-5xl md:text-6xl font-extrabold">Contact Us</h1>
+            <p className="py-5 xl:py-10 xl:pr-36 text-justify text-gray-400 text-sm md:text-base">
               I specialize in developing modern full-stack applications using
               the MERN stack with a strong focus on performance and clean
               architecture. I’m passionate about solving real-world problems and
@@ -32,7 +35,7 @@ const Contact = () => {
               can contribute to your next project.
             </p>
 
-            <div className="flex items-center gap-5 text-gray-400">
+            <div className="flex flex-wrap md:flex-row items-center gap-2 lg:gap-5 text-gray-400 text-sm md:text-base">
               <p>mehedihasanbaized@gmail.com</p>
               <span>
                 <GoDotFill className="text-sm" />
@@ -44,11 +47,11 @@ const Contact = () => {
               <p>Uttara Dhaka-1230, Bangladesh</p>
             </div>
 
-            <div className="mt-16 w-[85%] relative">
+            <div className="mt-16 lg:w-[70%] lg:mx-auto xl:mx-0 xl:w-[85%] relative">
               <div className="">
                 <img src={world} alt="world" />
               </div>
-              <div className="absolute -top-8 right-5">
+              <div className="absolute -top-[92px] -right-[75px] md:-top-9 md:right-2 lg:-top-11 lg:-right-1.5 xl:-top-16 xl:-right-8 2xl:-top-7 2xl:right-5">
                 <PinContainer
                   title="I'm Here"
                   href="https://twitter.com/mannupaaji"
@@ -56,13 +59,18 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%] rounded-4xl overflow-hidden relative">
-            <GridBackgroundDemo />
-            <div className="bg-radial-[at_75%_25%] from-[#13003200] to-[#0b001bf9] to-35% absolute top-0 w-full h-full py-20">
-              <div className="w-[75%] mx-auto h-full flex justify-center items-center">
+
+          <div className="xl:w-[50%] rounded-4xl overflow-hidden">
+            <div className="relative h-full">
+              <div className="absolute top-0 left-0 w-full h-full">
+                <GridBackgroundDemo />
+              </div>
+              <div className="bg-radial-[at_75%_25%] from-[#13003200] to-[#0b001bf9] to-35% absolute top-0 left-0 w-full h-full z-0" />
+              {/* Form container */}
+              <div className="w-full md:w-[75%] mx-auto md:flex md:justify-center md:items-center h-full z-10 relative px-5 py-10 md:px-0">
                 <MForm onSubmit={handleEmailSubmit}>
-                  <div className="space-y-5">
-                    <div className="flex gap-5">
+                  <div className="space-y-5 w-full">
+                    <div className="flex flex-col md:flex-row gap-5">
                       <MInput
                         type="text"
                         name="firstName"

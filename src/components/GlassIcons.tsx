@@ -31,7 +31,7 @@ const GlassIcons: React.FC<GlassIconsProps> = ({ items, className }) => {
 
   return (
     <div
-      className={`grid gap-[5em] grid-cols-2 md:grid-cols-3 mx-auto py-[3em] overflow-visible ${className || ""}`}
+      className={`grid gap-[5em] grid-cols-2 md:grid-cols-3 mx-auto overflow-visible ${className || ""}`}
     >
       {items.map((item, index) => (
         <button
